@@ -4,7 +4,7 @@ import Login from '@/util/signin';
 import { useRouter } from "next/navigation";
 import { useState } from 'react';
 
-export default function Home() {
+export default function LoginPage() {
 
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -29,7 +29,7 @@ export default function Home() {
     }
 
     if( data ) {
-      router.push("/home/user/package");
+      router.push(`/home/user/packages`);
     }
   };
 
